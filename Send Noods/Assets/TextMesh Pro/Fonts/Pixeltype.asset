@@ -46,7 +46,7 @@ Material:
     - _VertexOffsetY: 0
     m_Colors:
     - _ClipRect: {r: -32767, g: -32767, b: 32767, a: 32767}
-    - _FaceColor: {r: 1, g: 1, b: 1, a: 1}
+    - _FaceColor: {r: 1367.1202, g: 1367.1202, b: 1367.1202, a: 1}
   m_BuildTextureStacks: []
 --- !u!114 &11400000
 MonoBehaviour:
@@ -60,9 +60,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
   m_Name: Pixeltype
   m_EditorClassIdentifier: 
-  hashCode: 0
+  hashCode: 354108752
   material: {fileID: -1025534288885733629}
-  materialHashCode: 0
+  materialHashCode: 646193008
   m_Version: 1.1.0
   m_SourceFontFileGUID: c6db35db483d72f43b02fb7e4835cb66
   m_SourceFontFile_EditorRef: {fileID: 12800000, guid: c6db35db483d72f43b02fb7e4835cb66, type: 3}
