@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface ITalkable
+public interface IInteractable
 {
-    public void Talk(DialogueText dialogueText);
+    public void Interact();
 }
