@@ -47,3 +47,12 @@ TagManager:
   - name: Dialogue
     uniqueID: 1327190315
     locked: 0
+  - name: background
+    uniqueID: 542834577
+    locked: 0
+  - name: foreground
+    uniqueID: 1515314651
+    locked: 0
+  - name: lights
+    uniqueID: 3314346973
+    locked: 0
