@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1c44d26bee7f894782729c6bcff2b73, type: 3}
+  m_Name: Chilli Conversation 2
+  m_EditorClassIdentifier: 
+  SpeakerName: Yukio
+  paragraphs:
+  - "DAYUM I FEEL INCREDIBLE\u201D \u201Cyou are the most insane chef"
+  - only the best for my best friend
+  - PHEWWWWWWW i feel so good i am on fire
+  - okay isagi, tell me about your night. did you do what i asked?
+  - "oooh yes okay i\u2019ve been looking forward to this\u201D  \u201Cbut yes of
+    course i did because i\u2019m the bestest in the whole world at what i do\u201D
+    \u201Ci got in contact with Kenji - the detective you remember?"
+  - of course
+  - "right, well this guy was really strange but he agreed without hesitation\u201D
+    \u201Cat this point so many detectives have turned us down this guy could be
+    anyone and i\u2019d hire him"
+  - "thank god, and i agree, i\u2019ve waited too long already. i miss him."
+  - "its okay yukio, i\u2019m always here"
+  - "\u2026"
+  - except for right now, i got things (and the girl from last night) to do
+  - right, have fun with that
+  - "bye! and next time I WANT THE SAME THING\u201D \u201Cit feels illegal to feel
+    this good\u2026"

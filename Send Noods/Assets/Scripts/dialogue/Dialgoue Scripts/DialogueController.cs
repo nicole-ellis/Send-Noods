@@ -26,6 +26,10 @@ public class DialogueController : MonoBehaviour
     private int NPCNAMEChange = 0;
 
 
+
+
+
+
     public void SetSpeakerName(string newSpeakerName)
     {
         NPCNameText.text = newSpeakerName;
@@ -110,22 +114,17 @@ public class DialogueController : MonoBehaviour
 
     private void EndConversation()
     {
-        
+
         //clear the queue
         paragraphs.Clear();
         //return bool as false
         conversationEnded = false;
-        //deactivate gameObject
+        //deactivate itself(Narrative section)
         if (gameObject.activeSelf)
         {
             gameObject.SetActive(false);
         }
-
-        GameObject[] arrows = GameObject.FindGameObjectsWithTag("Respawn");
-        foreach (GameObject arrow in arrows)
-        {
-            arrow.SetActive(true);
-        }
+        
     }
 
 
@@ -164,4 +163,18 @@ public class DialogueController : MonoBehaviour
         //update IsTyping bool
         IsTyping = false;
     }
+
+
+
+
+
+
+    
 }
+
+
+
+
+
+
+
