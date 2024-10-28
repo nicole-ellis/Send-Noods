@@ -6051,6 +6051,7 @@ GameObject:
   - component: {fileID: 1142161359}
   - component: {fileID: 1142161358}
   - component: {fileID: 1142161360}
+  - component: {fileID: 1142161361}
   m_Layer: 5
   m_Name: TextNarrative
   m_TagString: Narrative Part 1
@@ -6070,7 +6071,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1776789595}
   - {fileID: 311425408}
   - {fileID: 799143479}
   m_Father: {fileID: 667097564}
@@ -6133,6 +6133,19 @@ MonoBehaviour:
   NPCNameText: {fileID: 311425409}
   NPCDialogueText: {fileID: 799143480}
   typeSpeed: 10
+  KitchenShow: 0
+--- !u!114 &1142161361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1142161356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627eb153ae0f7584abdfa890cce1ef04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1144738071
 GameObject:
   m_ObjectHideFlags: 0
@@ -8035,6 +8048,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1776789595}
   - {fileID: 667097564}
   - {fileID: 2089027806}
   - {fileID: 2008019981}
@@ -9673,14 +9687,14 @@ GameObject:
   - component: {fileID: 1776789598}
   - component: {fileID: 1776789597}
   - component: {fileID: 1776789596}
-  - component: {fileID: 1776789599}
+  - component: {fileID: 1776789600}
   m_Layer: 5
   m_Name: kitchen
   m_TagString: kitchen
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1776789595
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9689,15 +9703,15 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1776789594}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 92}
-  m_LocalScale: {x: 0.009259999, y: 0.009259999, z: 0.009259999}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.0000798, y: 1.0000798, z: 1.0000798}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1142161357}
+  m_Father: {fileID: 1585991432}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5.89, y: -0.96}
+  m_AnchoredPosition: {x: 597.7969, y: 100.683105}
   m_SizeDelta: {x: 457.0361, y: 94.0201}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1776789596
@@ -9818,7 +9832,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1776789594}
   m_CullTransparentMesh: 1
---- !u!114 &1776789599
+--- !u!114 &1776789600
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9827,10 +9841,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1776789594}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c8fc5a1dda4b86439847fe85c494626, type: 3}
+  m_Script: {fileID: 11500000, guid: faa5a1200b78b4345b12afe81cdaf823, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToHide: {fileID: 0}
+  Kit: {fileID: 1142161360}
+  targetObject: {fileID: 1776789594}
 --- !u!1 &1798301777
 GameObject:
   m_ObjectHideFlags: 0

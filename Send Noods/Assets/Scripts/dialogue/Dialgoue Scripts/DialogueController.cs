@@ -26,7 +26,7 @@ public class DialogueController : MonoBehaviour
     private int NPCNAMEChange = 0;
 
 
-
+    [SerializeField] public int KitchenShow = 0;
 
 
 
@@ -114,7 +114,7 @@ public class DialogueController : MonoBehaviour
 
     private void EndConversation()
     {
-
+        KitchenShow = KitchenShow + 1;
         //clear the queue
         paragraphs.Clear();
         //return bool as false
