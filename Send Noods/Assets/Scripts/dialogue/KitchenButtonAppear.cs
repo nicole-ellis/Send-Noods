@@ -8,7 +8,7 @@ public class KitchenButtonAppear : MonoBehaviour
 
     public DialogueController Kit;
     public GameObject targetObject;
-    private void Start()
+    private void Start() // if the conversation has not ended hide the Kitchen button
     {
         if (Kit.KitchenShow == 0)
         {
@@ -17,14 +17,9 @@ public class KitchenButtonAppear : MonoBehaviour
     }
     void Update()
     {
-        if ((Kit.KitchenShow) == 1)
+        if ((Kit.KitchenShow) == 1) // if the conversation has ended show the Kitchen button
         {
             targetObject.GetComponent<Image>().enabled = true;
-            Debug.Log("Yes, it works");
-        }
-        else
-        {
-            
         }
     }
 }

@@ -7,14 +7,14 @@ using UnityEditor.Experimental.GraphView;
 
 public class DialogueController : MonoBehaviour
 {
-    [SerializeField] private TextMeshProUGUI NPCNameText;
-    [SerializeField] private TextMeshProUGUI NPCDialogueText;
-    [SerializeField] private float typeSpeed = 10;
+    [SerializeField] private TextMeshProUGUI NPCNameText; // to display the Names
+    [SerializeField] private TextMeshProUGUI NPCDialogueText; // to display the dialogue
+    [SerializeField] private float typeSpeed = 10; // how fast the text moves
 
-    private Queue<string> paragraphs = new Queue<string>();
+    private Queue<string> paragraphs = new Queue<string>(); // create paragraphs
 
-    private bool conversationEnded;
-    private bool IsTyping;
+    private bool conversationEnded; // for when the conversation ends
+    private bool IsTyping; // for when the text is still being slowly being displayed
 
     private string p;
 
@@ -23,14 +23,14 @@ public class DialogueController : MonoBehaviour
     private const string HTML_ALPHA = "<color=#00000000>";
     private const float MAX_TYPE_TIME = 0.1f;
 
-    private int NPCNAMEChange = 0;
+    [SerializeField] public int NPCNAMEChange = 0;
 
 
     [SerializeField] public int KitchenShow = 0;
 
 
 
-    public void SetSpeakerName(string newSpeakerName)
+    public void SetSpeakerName(string newSpeakerName) // makes the speaker name into the display name
     {
         NPCNameText.text = newSpeakerName;
     }
@@ -101,8 +101,6 @@ public class DialogueController : MonoBehaviour
             gameObject.SetActive(true);
         }
 
-        //upadte speaker name
-        //SetSpeakerName(dialogueText.SpeakerName);
         
 
             //add dialogue text into queue
@@ -128,7 +126,7 @@ public class DialogueController : MonoBehaviour
     }
 
 
-    private IEnumerator TypeDialogueText(string p)
+    private IEnumerator TypeDialogueText(string p) //stops text from teleporting from the end of the text box to a new line of the textbox while still being typed
     {
         IsTyping = true;
 
