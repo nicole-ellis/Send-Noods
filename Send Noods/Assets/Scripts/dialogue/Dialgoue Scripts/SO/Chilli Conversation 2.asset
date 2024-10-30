@@ -14,21 +14,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SpeakerName: Yukio
   paragraphs:
-  - "DAYUM I FEEL INCREDIBLE\u201D \u201Cyou are the most insane chef"
-  - only the best for my best friend
-  - PHEWWWWWWW i feel so good i am on fire
-  - okay isagi, tell me about your night. did you do what i asked?
-  - "oooh yes okay i\u2019ve been looking forward to this\u201D  \u201Cbut yes of
-    course i did because i\u2019m the bestest in the whole world at what i do\u201D
-    \u201Ci got in contact with Kenji - the detective you remember?"
-  - of course
-  - "right, well this guy was really strange but he agreed without hesitation\u201D
-    \u201Cat this point so many detectives have turned us down this guy could be
-    anyone and i\u2019d hire him"
-  - "thank god, and i agree, i\u2019ve waited too long already. i miss him."
-  - "its okay yukio, i\u2019m always here"
+  - 'DAYUM I FEEL INCREDIBLE
+
+
+    You are the most insane chef'
+  - Only the best for my best friend
+  - I feel so good I am on fire
+  - "Okay Isagi, tell me about your night. \n\nDid you do what I asked?"
+  - "Oooh yes okay I have been looking forward to this.  \n\nBut yes of course I
+    did because I am the bestest in the whole world at what i do\n\nI got in contact
+    with Kenji - the detective you remember?"
+  - Of course
+  - 'Right, well this guy was really strange but he agreed without hesitation
+
+
+    At
+    this point so many detectives have turned us down this guy could be anyone and
+    I would hire him'
+  - "Thank god, and I agree, I have waited too long already. \n\nI miss him."
+  - Its okay Yukio, I am always here for you
   - "\u2026"
-  - except for right now, i got things (and the girl from last night) to do
-  - right, have fun with that
-  - "bye! and next time I WANT THE SAME THING\u201D \u201Cit feels illegal to feel
-    this good\u2026"
+  - Except for right now, I got things (and the girl from last night) to do
+  - Right, have fun with that
+  - "Bye! and next time I WANT THE SAME THING\n\nIt feels illegal to feel this good\u2026"
