@@ -16,11 +16,11 @@ public class BackgroundTextChange : MonoBehaviour
     }
     void Update()
     {
-        if (NameChange.NPCNAMEChange % 2 == 0)// if isagi is not talking hide the blue text background
+        if (NameChange.NPCNAMEChange == 2 || NameChange.NPCNAMEChange == 5 || NameChange.NPCNAMEChange == 10)// if isagi is not talking hide the blue text background
         {
             targetObject.GetComponent<Image>().enabled = false;
         }
-        else
+        else if (NameChange.NPCNAMEChange == 1 || NameChange.NPCNAMEChange == 3 || NameChange.NPCNAMEChange == 6)
         {
             targetObject.GetComponent<Image>().enabled = true;
         }

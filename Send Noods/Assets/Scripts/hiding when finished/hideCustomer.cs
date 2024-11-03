@@ -2,24 +2,36 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.UIElements;
 
 public class hideCustomer : MonoBehaviour
 {
 
     public DialogueController Kit;
     public GameObject targetObject;
+
+    private Vector3 currentPosition; // Variable to store the current position
+    public Vector3 newPosition;
     private void Start() // if the conversation has not ended show the customer
     {
         if (Kit.KitchenShow == 0)
         {
-            targetObject.GetComponent<Image>().enabled = true;
+            targetObject.GetComponent<SpriteRenderer>().enabled = true;
+            //targetObject.SetActive(true);
+            currentPosition = transform.position; // Get and save the current position
+            transform.position = currentPosition; // Set the position to current
         }
     }
     void Update()
     {
         if ((Kit.KitchenShow) == 1) // if the conversation has ended hide the customer
         {
-            targetObject.GetComponent<Image>().enabled = false;
+            newPosition = currentPosition;
+            newPosition.x += 10;
+            transform.position = newPosition;
+            targetObject.GetComponent<SpriteRenderer>().enabled = false;
+            //targetObject.SetActive(false);
+
         }
     }
 }

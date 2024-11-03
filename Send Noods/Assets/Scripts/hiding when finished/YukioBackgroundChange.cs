@@ -16,11 +16,11 @@ public class YukioBackgroundChange : MonoBehaviour
     }
     void Update()
     {
-        if (NameChange.NPCNAMEChange % 2 == 0)// if yukio is not talking hide the red text background
+        if (NameChange.NPCNAMEChange == 2 || NameChange.NPCNAMEChange == 5 || NameChange.NPCNAMEChange == 10)// if yukio is not talking hide the red text background
         {
             targetObject.GetComponent<Image>().enabled = true;
         }
-        else
+        else if (NameChange.NPCNAMEChange == 1 || NameChange.NPCNAMEChange == 3 || NameChange.NPCNAMEChange == 6)
         {
             targetObject.GetComponent<Image>().enabled = false;
         }
