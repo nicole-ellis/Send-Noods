@@ -21,5 +21,9 @@ public class KitchenButtonAppear : MonoBehaviour
         {
             targetObject.GetComponent<Image>().enabled = true;
         }
+        else if ((Kit.KitchenShow) == 2) // if the conversation has ended show the Kitchen button
+        {
+            targetObject.GetComponent<Image>().enabled = false;
+        }
     }
 }
