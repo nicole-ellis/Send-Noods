@@ -9,7 +9,6 @@ public class BringChefBack : MonoBehaviour
     public Button mybutton;
     [SerializeField] private GameObject visualchef;
     public hideCustomer hideC;
-    public int FoodsComplete = 0;
 
 
     void Start()
@@ -27,7 +26,6 @@ public class BringChefBack : MonoBehaviour
 
     void OnButtonClick()
     {
-        FoodsComplete = FoodsComplete + 1;
         hideC.allowMoveChef = true;
         actualchef.GetComponent<SpriteRenderer>().enabled = true;
         actualchef.transform.position = visualchef.transform.position;
