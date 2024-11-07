@@ -7,7 +7,6 @@ using UnityEditor.Experimental.GraphView;
 
 public class DialogueController : MonoBehaviour
 {
-    [SerializeField] private TextMeshProUGUI NPCNameText; // to display the Names
     [SerializeField] private TextMeshProUGUI NPCDialogueText; // to display the dialogue
     [SerializeField] private float typeSpeed = 10; // how fast the text moves
 
@@ -30,10 +29,7 @@ public class DialogueController : MonoBehaviour
 
 
 
-    public void SetSpeakerName(string newSpeakerName) // makes the speaker name into the display name
-    {
-        NPCNameText.text = newSpeakerName;
-    }
+
 
 
 
@@ -64,12 +60,10 @@ public class DialogueController : MonoBehaviour
             // changes who is Speaker
             if (NPCNAMEChange % 2 == 0)
             {
-                SetSpeakerName("Isagi");
                 NPCNAMEChange = NPCNAMEChange + 1;
             }
             else
             {
-                SetSpeakerName("Yukio");
                 NPCNAMEChange = NPCNAMEChange + 1;
             }
 
