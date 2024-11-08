@@ -26,7 +26,7 @@ public class hideCustomer : MonoBehaviour
     }
     void Update()
     {
-        if ((Kit.KitchenShow) == 1 && allowMoveChef == false || Kit.KitchenShow == 2) // if the conversation has ended hide the customer
+        if ((Kit.KitchenShow) == 1 && allowMoveChef == false) // if the conversation has ended hide the customer
         {
             newPosition = currentPosition;
             newPosition.x += 10;

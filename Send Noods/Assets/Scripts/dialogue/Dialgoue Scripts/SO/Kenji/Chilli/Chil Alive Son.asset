@@ -13,4 +13,7 @@ MonoBehaviour:
   m_Name: Chil Alive Son
   m_EditorClassIdentifier: 
   SpeakerName: 
-  paragraphs: []
+  paragraphs:
+  - Do you know if my son is alive?
+  - "OHH your son, right! Yeah he\u2019s alive but\r\nnot for long! "
+  - Its okay dont stress out though, fathers huh.

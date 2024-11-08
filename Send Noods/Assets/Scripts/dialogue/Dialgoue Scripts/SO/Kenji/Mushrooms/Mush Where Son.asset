@@ -13,4 +13,7 @@ MonoBehaviour:
   m_Name: Mush Where Son
   m_EditorClassIdentifier: 
   SpeakerName: 
-  paragraphs: []
+  paragraphs:
+  - Where is my son
+  - "Where is he? What you think I know? I cant help you Im sorry dont get angry\u2026"
+  - Here just go to this location I cant do this Im sorry

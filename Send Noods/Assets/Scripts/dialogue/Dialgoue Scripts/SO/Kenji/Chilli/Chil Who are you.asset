@@ -13,4 +13,7 @@ MonoBehaviour:
   m_Name: Chil Who are you
   m_EditorClassIdentifier: 
   SpeakerName: 
-  paragraphs: []
+  paragraphs:
+  - Who are you?
+  - HAHAHA ahhh I AM KENJI!.
+  - The detective? I know I look strange right now but I am great. I feel great.

@@ -13,4 +13,8 @@ MonoBehaviour:
   m_Name: Chiv Alive Son
   m_EditorClassIdentifier: 
   SpeakerName: 
-  paragraphs: []
+  paragraphs:
+  - Do you know if my son is alive?
+  - 'What? You asked me something? Sorry, I
+
+    didnt hear you'

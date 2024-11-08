@@ -13,4 +13,9 @@ MonoBehaviour:
   m_Name: Chiv Where Son
   m_EditorClassIdentifier: 
   SpeakerName: 
-  paragraphs: []
+  paragraphs:
+  - Where is my son
+  - 'Your son, right. Uh, look I dont know where he is but I
+
+    could help you
+    start I guess'

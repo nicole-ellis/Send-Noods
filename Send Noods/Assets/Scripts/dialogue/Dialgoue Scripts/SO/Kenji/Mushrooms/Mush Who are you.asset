@@ -13,4 +13,8 @@ MonoBehaviour:
   m_Name: Mush Who are you
   m_EditorClassIdentifier: 
   SpeakerName: 
-  paragraphs: []
+  paragraphs:
+  - Who are you?
+  - Excuse me? What dont ask me that? Youre working for them arent you, I fucking
+    knew it
+  - "Yeah I\u2019m out of here just go here"

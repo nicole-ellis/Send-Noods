@@ -13,4 +13,7 @@ MonoBehaviour:
   m_Name: Chil Where Son
   m_EditorClassIdentifier: 
   SpeakerName: 
-  paragraphs: []
+  paragraphs:
+  - Where is my son
+  - Ah right. Thats the question isnt it. Honestly! No clue!
+  - But I do know where you should start.
