@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1c44d26bee7f894782729c6bcff2b73, type: 3}
+  m_Name: Starting Kenji
+  m_EditorClassIdentifier: 
+  SpeakerName: Kenji
+  paragraphs:
+  - Welcome! What can I help you with?
+  - Hm, are you Yukio?
+  - Yes, and you are?
+  - Not necessary. I heard you were looking for someone.
+  - "You\u2019re correct."
+  - "Hm, well I know where you can start. But you\u2019ll have to give me something
+    in\r\nreturn"
+  - Ah, of course. What were you looking for
+  - Im bored and I want some entertainment. Hmm, lets play a game.
+  - ' If you can persuade me to answer your questions, Ill tell you where to start. '
+  - 'Otherwise, I heard you make the best ramen in town. '
+  - "It\u2019s mine for free and youll have to figure it out for yourself"
+  - Sounds like fun.
