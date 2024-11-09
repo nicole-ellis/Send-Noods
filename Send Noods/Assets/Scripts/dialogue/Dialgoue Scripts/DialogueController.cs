@@ -28,8 +28,9 @@ public class DialogueController : MonoBehaviour
     [SerializeField] public int KitchenShow = 0;
 
 
-
-
+    public NFwho NFwho;
+    public NFWhere NFWhere;
+    public NFAlive NFAlive;
 
 
 
@@ -106,6 +107,11 @@ public class DialogueController : MonoBehaviour
 
     private void EndConversation()
     {
+
+        NFwho.NFQuestion1 = 0;
+        NFWhere.NFQuestion2 = 0;
+        NFAlive.NFQuestion3 = 0;
+
         KitchenShow = KitchenShow + 1;
         //clear the queue
         paragraphs.Clear();
