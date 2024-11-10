@@ -181,9 +181,11 @@ public class DialogueController : MonoBehaviour
         }
 
 
-        if (SAVECHILALIVE == 1 && SAVECHILWHO == 1 && SAVECHILWHERE == 1 || SAVECHIVALIVE == 1 && SAVECHIVWHO == 1 && SAVECHIVWHERE == 1 || SAVEMUSHWHERE == 1 || SAVEMUSHWHERE == 1 || SAVEMUSHWHERE == 1)
+        if (SAVECHILALIVE == 1 && SAVECHILWHO == 1 && SAVECHILWHERE == 1 || SAVECHIVALIVE == 1 && SAVECHIVWHO == 1 && SAVECHIVWHERE == 1 || SAVEMUSHWHO == 1 || SAVEMUSHWHERE == 1 || SAVEMUSHALIVE == 1)
         {
+
             KENJIHIDE.SetActive(false);
+            Debug.Log("niote appear");
             KENJISNOTE.GetComponent<Image>().enabled = true;
         }
 
