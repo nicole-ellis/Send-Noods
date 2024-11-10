@@ -47,6 +47,23 @@ public class DialogueController : MonoBehaviour
     public MUSHWhere MUSHWhere;
     public MUSHAlive MUSHAlive;
 
+
+
+    public int SAVECHIVWHO = 0;
+    public int SAVECHIVWHERE = 0;
+    public int SAVECHIVALIVE = 0;
+
+    public int SAVECHILWHO = 0;
+    public int SAVECHILWHERE = 0;
+    public int SAVECHILALIVE = 0;
+
+    public int SAVEMUSHWHO = 0;
+    public int SAVEMUSHWHERE = 0;
+    public int SAVEMUSHALIVE = 0;
+
+    public GameObject KENJISNOTE;
+    public GameObject KENJIHIDE;
+
     public void DisplayNextParagraph(DialogueText dialogueText)
     {
         // if there is nothing in the queue
@@ -118,6 +135,60 @@ public class DialogueController : MonoBehaviour
 
     private void EndConversation()
     {
+        if (CHILwho.RENAMECHANGE == 1)
+        {
+            SAVECHILWHO = 1;
+        }
+        if (CHILWhere.RENAMECHANGE == 1)
+        {
+            SAVECHILWHERE = 1;
+        }
+        if (CHILAlive.RENAMECHANGE == 1)
+        {
+            SAVECHILALIVE = 1;
+        }
+
+
+
+
+        if (CHIVwho.RENAMECHANGE == 1)
+        {
+            SAVECHIVWHO = 1;
+        }
+        if (CHIVWhere.RENAMECHANGE == 1)
+        {
+            SAVECHIVWHERE = 1;
+        }
+        if (CHIVAlive.RENAMECHANGE == 1)
+        {
+            SAVECHIVALIVE = 1;
+        }
+
+
+
+
+        if (MUSHwho.RENAMECHANGE == 1)
+        {
+            SAVEMUSHWHO = 1;
+        }
+        if (MUSHWhere.RENAMECHANGE == 1)
+        {
+            SAVEMUSHWHERE = 1;
+        }
+        if (MUSHAlive.RENAMECHANGE == 1)
+        {
+            SAVEMUSHALIVE = 1;
+        }
+
+
+        if (SAVECHILALIVE == 1 && SAVECHILWHO == 1 && SAVECHILWHERE == 1 || SAVECHIVALIVE == 1 && SAVECHIVWHO == 1 && SAVECHIVWHERE == 1 || SAVEMUSHWHERE == 1 || SAVEMUSHWHERE == 1 || SAVEMUSHWHERE == 1)
+        {
+            KENJIHIDE.SetActive(false);
+            KENJISNOTE.GetComponent<Image>().enabled = true;
+        }
+
+
+
         NPCNAMEChange = 0;
         PackageAppear.MushroomsCollected = 0;
 
