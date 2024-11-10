@@ -1,24 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem.HID;
+using Unity.VisualScripting;
 using UnityEngine.UI;
 
-public class NFwho : MonoBehaviour
+public class MUSHWho : MonoBehaviour
 {
 
     public GameObject targetselfobject;
 
     public DialogueController Kit;
-    public int NFQuestion1 = 0;
-    public int RENAMECHANGE = 0;
+    public int MUSHQuestion1 = 0;
 
     public Button myButton1;
 
-    public NFWhere NFWhere;
-    public NFAlive NFAlive;
+    public MUSHWhere MUSHWhere;
+    public MUSHAlive MUSHAlive;
 
+    public int RENAMECHANGE = 0;
     private void Start()
     {
         {
@@ -33,25 +33,25 @@ public class NFwho : MonoBehaviour
     // Start is called before the first frame update
     void Update()
     {
-        if (Kit.KitchenShow >= 3 && NFQuestion1 == 0)
+        if (Kit.KitchenShow >= 3 && MUSHQuestion1 == 0)
         {
             targetselfobject.GetComponent<Image>().enabled = true;
         }
-        else if (NFQuestion1 == 1)
+        else if (MUSHQuestion1 == 1)
         {
             targetselfobject.SetActive(false);
         }
-        if (NFWhere.NFQuestion2 == 1 || NFAlive.NFQuestion3 == 1)
+        if (MUSHWhere.MUSHQuestion2 == 1 || MUSHAlive.MUSHQuestion3 == 1)
         {
-            targetselfobject.GetComponent<Image>().enabled = false;
+            targetselfobject.SetActive(false);
         }
     }
-        // Update is called once per frame
-        void OnButtonClick()
-        {
+    // Update is called once per frame
+    void OnButtonClick()
+    {
         RENAMECHANGE = 1;
-            // Code to execute when the button is clicked
-            Debug.Log("Button was clicked!");
-        NFQuestion1 = NFQuestion1 + 1;
-        }
+        // Code to execute when the button is clicked
+        Debug.Log("Button was clicked!");
+        MUSHQuestion1 = MUSHQuestion1 + 1;
+    }
 }

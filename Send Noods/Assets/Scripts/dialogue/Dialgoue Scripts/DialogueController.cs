@@ -16,6 +16,7 @@ public class DialogueController : MonoBehaviour
     private bool IsTyping; // for when the text is still being slowly being displayed
 
     private string p;
+    public PackageAppear PackageAppear;
 
     private Coroutine typeDialogueCoroutine;
 
@@ -32,9 +33,19 @@ public class DialogueController : MonoBehaviour
     public NFWhere NFWhere;
     public NFAlive NFAlive;
 
+    public CHILWho CHILwho;
+    public CHILWhere CHILWhere;
+    public ChilAlive CHILAlive;
 
 
+    public CHIVWho CHIVwho;
+    public CHIVWhere CHIVWhere;
+    public ChivAlive CHIVAlive;
 
+
+    public MUSHWho MUSHwho;
+    public MUSHWhere MUSHWhere;
+    public MUSHAlive MUSHAlive;
 
     public void DisplayNextParagraph(DialogueText dialogueText)
     {
@@ -107,10 +118,37 @@ public class DialogueController : MonoBehaviour
 
     private void EndConversation()
     {
+        NPCNAMEChange = 0;
+        PackageAppear.MushroomsCollected = 0;
 
         NFwho.NFQuestion1 = 0;
+        NFwho.RENAMECHANGE = 0;
         NFWhere.NFQuestion2 = 0;
+        NFWhere.RENAMECHANGE = 0;
         NFAlive.NFQuestion3 = 0;
+        NFAlive.RENAMECHANGE = 0;
+
+        CHILwho.CHILQuestion1 = 0;
+        CHILwho.RENAMECHANGE = 0;
+        CHILWhere.CHILQuestion2 = 0;
+        CHILWhere.RENAMECHANGE = 0;
+        CHILAlive.CHILQuestion3 = 0;
+        CHILAlive.RENAMECHANGE = 0;
+
+        CHIVwho.CHIVQuestion1 = 0;
+        CHIVwho.RENAMECHANGE = 0;
+        CHIVAlive.CHIVQuestion3 = 0;
+        CHIVWhere.RENAMECHANGE = 0;
+        CHIVWhere.CHIVQuestion2 = 0;
+        CHIVAlive.RENAMECHANGE = 0;
+
+        MUSHwho.MUSHQuestion1 = 0;
+        MUSHwho.RENAMECHANGE = 0;
+        MUSHWhere.MUSHQuestion2 = 0;
+        MUSHWhere.RENAMECHANGE = 0;
+        MUSHAlive.MUSHQuestion3 = 0;
+        MUSHAlive.RENAMECHANGE = 0;
+
 
         KitchenShow = KitchenShow + 1;
         //clear the queue

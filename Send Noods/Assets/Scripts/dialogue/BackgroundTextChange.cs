@@ -5,50 +5,60 @@ using UnityEngine.UI;
 
 public class BackgroundTextChange : MonoBehaviour
 {
+    public DialogueController Kit;
     public DialogueController NameChange;
     public GameObject targetObject;
     public GameObject ChilliOrChives;
+    public GameObject ChivesCust;
+    public PackageAppear Package;
     private void Start() // if isagi is talking change the colour of the text background to blue
     {
-        if (NameChange.NPCNAMEChange == 0)
+        if (Kit.KitchenShow < 3 && NameChange.NPCNAMEChange == 0)
         {
-            targetObject.GetComponent<Image>().enabled = true;
+            targetObject.GetComponent<Image>().enabled = false;
         }
     }
     void Update()
     {
-        if (NameChange.NPCNAMEChange == 2 || NameChange.NPCNAMEChange == 5 || NameChange.NPCNAMEChange == 10)// if isagi is not talking hide the blue text background
+        if (Kit.KitchenShow == 0)
         {
-            targetObject.GetComponent<Image>().enabled = false;
+            if (Kit.KitchenShow < 3 && NameChange.NPCNAMEChange == 2 || Kit.KitchenShow < 3 && NameChange.NPCNAMEChange == 5 || Kit.KitchenShow < 3 && NameChange.NPCNAMEChange == 10)
+            {
+                targetObject.GetComponent<Image>().enabled = false;
+            }
+            else if (Kit.KitchenShow < 3 && NameChange.NPCNAMEChange == 1 || Kit.KitchenShow < 3 && NameChange.NPCNAMEChange == 3 || Kit.KitchenShow < 3 && NameChange.NPCNAMEChange == 6)
+            {
+                targetObject.GetComponent<Image>().enabled = true;
+            }
         }
-        else if (NameChange.NPCNAMEChange == 1 || NameChange.NPCNAMEChange == 3 || NameChange.NPCNAMEChange == 6)
-        {
-            targetObject.GetComponent<Image>().enabled = true;
-        }
+
+
 
 
 
         if (ChilliOrChives.activeSelf)
         {
-            if (NameChange.NPCNAMEChange == 12 || NameChange.NPCNAMEChange == 14 || NameChange.NPCNAMEChange == 18 || NameChange.NPCNAMEChange == 21 || NameChange.NPCNAMEChange == 24 || NameChange.NPCNAMEChange == 26)
+            if (Kit.KitchenShow < 3 && NameChange.NPCNAMEChange == 2 || Kit.KitchenShow < 3 && NameChange.NPCNAMEChange == 4 || Kit.KitchenShow < 3 && NameChange.NPCNAMEChange == 8 || Kit.KitchenShow < 3 && NameChange.NPCNAMEChange == 11 || Kit.KitchenShow < 3 && NameChange.NPCNAMEChange == 14 || Kit.KitchenShow < 3 && NameChange.NPCNAMEChange == 16)
             {
                 targetObject.GetComponent<Image>().enabled = false;
             }
-            else if (NameChange.NPCNAMEChange == 11 || NameChange.NPCNAMEChange == 13 || NameChange.NPCNAMEChange == 15 || NameChange.NPCNAMEChange == 19 || NameChange.NPCNAMEChange == 23 || NameChange.NPCNAMEChange == 25 || NameChange.NPCNAMEChange == 27)
+            else if (Kit.KitchenShow < 3 && NameChange.NPCNAMEChange == 1 || Kit.KitchenShow < 3 && NameChange.NPCNAMEChange == 3 || Kit.KitchenShow < 3 && NameChange.NPCNAMEChange == 5 || Kit.KitchenShow < 3 && NameChange.NPCNAMEChange == 9 || Kit.KitchenShow < 3 && NameChange.NPCNAMEChange == 13 || Kit.KitchenShow < 3 && NameChange.NPCNAMEChange == 15 || Kit.KitchenShow < 3 && NameChange.NPCNAMEChange == 17)
             {
                 targetObject.GetComponent<Image>().enabled = true;
             }
         }
-        else
+        else if (ChivesCust.activeSelf)
         {
-            if (NameChange.NPCNAMEChange == 12 || NameChange.NPCNAMEChange == 14 || NameChange.NPCNAMEChange == 17 || NameChange.NPCNAMEChange == 20 || NameChange.NPCNAMEChange == 23 || NameChange.NPCNAMEChange == 25)
+            if (Kit.KitchenShow < 3 && NameChange.NPCNAMEChange == 2 || Kit.KitchenShow < 3 && NameChange.NPCNAMEChange == 4 || Kit.KitchenShow < 3 && NameChange.NPCNAMEChange == 7 || Kit.KitchenShow < 3 && NameChange.NPCNAMEChange == 10 || Kit.KitchenShow < 3 && NameChange.NPCNAMEChange == 13 || Kit.KitchenShow < 3 && NameChange.NPCNAMEChange == 15)
             {
                 targetObject.GetComponent<Image>().enabled = false;
             }
-            else if (NameChange.NPCNAMEChange == 11 || NameChange.NPCNAMEChange == 13 || NameChange.NPCNAMEChange == 15 || NameChange.NPCNAMEChange == 18 || NameChange.NPCNAMEChange == 22 || NameChange.NPCNAMEChange == 24 || NameChange.NPCNAMEChange == 26)
+            else if (Kit.KitchenShow < 3 && NameChange.NPCNAMEChange == 1 || Kit.KitchenShow < 3 && NameChange.NPCNAMEChange == 3 || Kit.KitchenShow < 3 && NameChange.NPCNAMEChange == 5 || Kit.KitchenShow < 3 && NameChange.NPCNAMEChange == 8 || Kit.KitchenShow < 3 && NameChange.NPCNAMEChange == 12 || Kit.KitchenShow < 3 && NameChange.NPCNAMEChange == 14 || Kit.KitchenShow < 3 && NameChange.NPCNAMEChange == 16)
             {
                 targetObject.GetComponent<Image>().enabled = true;
             }
         }
+
+
     }
 }

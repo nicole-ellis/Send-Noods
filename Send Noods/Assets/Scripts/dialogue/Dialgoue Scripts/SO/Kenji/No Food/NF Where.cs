@@ -17,6 +17,8 @@ public class NFWhere : MonoBehaviour
     public NFwho NFwho;
     public NFAlive NFAlive;
 
+    public int RENAMECHANGE = 0;
+
     private void Start()
     {
         {
@@ -47,6 +49,7 @@ public class NFWhere : MonoBehaviour
     // Update is called once per frame
     void OnButtonClick()
     {
+        RENAMECHANGE = 1;
         // Code to execute when the button is clicked
         Debug.Log("Button was clicked!");
         NFQuestion2 = NFQuestion2 + 1;

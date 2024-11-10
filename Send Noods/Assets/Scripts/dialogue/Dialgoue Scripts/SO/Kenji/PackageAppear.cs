@@ -9,7 +9,7 @@ public class PackageAppear : MonoBehaviour
     public DialogueController Kit;
     public GameObject targetObject;
     public Button mybutton;
-    private int MushroomsCollected = 0;
+    public int MushroomsCollected = 0;
     void Start()
     {
 

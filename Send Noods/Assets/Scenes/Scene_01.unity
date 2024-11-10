@@ -360,13 +360,14 @@ GameObject:
   - component: {fileID: 139792851}
   - component: {fileID: 139792850}
   - component: {fileID: 139792849}
+  - component: {fileID: 139792852}
   m_Layer: 5
   m_Name: Is my Son Alive
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &139792848
 RectTransform:
   m_ObjectHideFlags: 0
@@ -429,7 +430,67 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 139792850}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 321956240}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 139792847}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 619544911}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 816143929}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1413694486}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &139792850
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -468,6 +529,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 139792847}
   m_CullTransparentMesh: 1
+--- !u!114 &139792852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 139792847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f6ceea111afa9f4faa175d4c5e97481, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetselfobject: {fileID: 139792847}
+  Kit: {fileID: 1142161360}
+  CHIVQuestion3: 0
+  myButton1: {fileID: 139792849}
+  CHIVWho: {fileID: 429681382}
+  CHIVWhere: {fileID: 1216668088}
+  RENAMECHANGE: 0
 --- !u!1 &173691772
 GameObject:
   m_ObjectHideFlags: 0
@@ -624,13 +704,14 @@ GameObject:
   - component: {fileID: 176650408}
   - component: {fileID: 176650410}
   - component: {fileID: 176650409}
+  - component: {fileID: 176650411}
   m_Layer: 0
   m_Name: WIMS Kenji MUSH
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &176650408
 Transform:
   m_ObjectHideFlags: 0
@@ -714,6 +795,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &176650411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 176650407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2776b2d3f6f72fd4bb27909ecdaae1ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MUSHwho: {fileID: 439065659}
+  MUSHWhere: {fileID: 1080132369}
+  MUSHAlive: {fileID: 1620715947}
+  MUSHKenji: {fileID: 953375986}
 --- !u!1 &179544090
 GameObject:
   m_ObjectHideFlags: 0
@@ -999,7 +1096,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &235532180
 Transform:
   m_ObjectHideFlags: 0
@@ -1646,9 +1743,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28f25ad8355de1346a1ba4b534dbcd71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Kit: {fileID: 1142161360}
   NameChange: {fileID: 1142161360}
   targetObject: {fileID: 311425407}
   ChilliOrChives: {fileID: 529823350}
+  ChivesCust: {fileID: 750667878}
+  Package: {fileID: 934803035}
+  NFwho: {fileID: 1354224190}
+  NFWhere: {fileID: 1976569667}
+  NFAlive: {fileID: 886746265}
+  CHILwho: {fileID: 1909195419}
+  CHILWhere: {fileID: 424110918}
+  CHILAlive: {fileID: 1851115657}
+  CHIVwho: {fileID: 429681382}
+  CHIVWhere: {fileID: 1216668088}
+  CHIVAlive: {fileID: 139792852}
+  MUSHwho: {fileID: 439065659}
+  MUSHWhere: {fileID: 1080132369}
+  MUSHAlive: {fileID: 1620715947}
 --- !u!1 &313501470
 GameObject:
   m_ObjectHideFlags: 0
@@ -1737,9 +1849,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37b15274302969644ae5c61c70d00d59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Kit: {fileID: 1142161360}
   NameChange: {fileID: 1142161360}
   targetObject: {fileID: 313501470}
   ChilliOrChives: {fileID: 529823350}
+  ChivesCust: {fileID: 750667878}
+  Package: {fileID: 934803035}
+  NFwho: {fileID: 1354224190}
+  NFWhere: {fileID: 1976569667}
+  NFAlive: {fileID: 886746265}
+  CHILwho: {fileID: 1909195419}
+  CHILWhere: {fileID: 424110918}
+  CHILAlive: {fileID: 1851115657}
+  CHIVwho: {fileID: 429681382}
+  CHIVWhere: {fileID: 1216668088}
+  CHIVAlive: {fileID: 139792852}
+  MUSHwho: {fileID: 439065659}
+  MUSHWhere: {fileID: 1080132369}
+  MUSHAlive: {fileID: 1620715947}
 --- !u!1 &321956240
 GameObject:
   m_ObjectHideFlags: 0
@@ -1751,13 +1878,14 @@ GameObject:
   - component: {fileID: 321956241}
   - component: {fileID: 321956243}
   - component: {fileID: 321956242}
+  - component: {fileID: 321956244}
   m_Layer: 0
   m_Name: IMSA Kenji CHIV
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &321956241
 Transform:
   m_ObjectHideFlags: 0
@@ -1841,6 +1969,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &321956244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 321956240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5f86b52be5c7ba45a1d06f01434a136, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CHIVwho: {fileID: 429681382}
+  CHIVWhere: {fileID: 1216668088}
+  CHIVAlive: {fileID: 139792852}
+  CHIVKenji: {fileID: 619544911}
 --- !u!1 &334768721
 GameObject:
   m_ObjectHideFlags: 0
@@ -2208,13 +2352,14 @@ GameObject:
   - component: {fileID: 424110917}
   - component: {fileID: 424110916}
   - component: {fileID: 424110915}
+  - component: {fileID: 424110918}
   m_Layer: 5
   m_Name: Where is my Son
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &424110914
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2277,7 +2422,67 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 424110916}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 451876818}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 424110913}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1151025353}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1060950691}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 580052467}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &424110916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2316,6 +2521,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 424110913}
   m_CullTransparentMesh: 1
+--- !u!114 &424110918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 424110913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10d3a7e36c8089449aad23407b571148, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetselfobject: {fileID: 424110913}
+  Kit: {fileID: 1142161360}
+  CHILQuestion2: 0
+  myButton1: {fileID: 424110915}
+  CHILwho: {fileID: 1909195419}
+  CHILAlive: {fileID: 1851115657}
+  RENAMECHANGE: 0
 --- !u!1 &429681377
 GameObject:
   m_ObjectHideFlags: 0
@@ -2328,13 +2552,14 @@ GameObject:
   - component: {fileID: 429681381}
   - component: {fileID: 429681380}
   - component: {fileID: 429681379}
+  - component: {fileID: 429681382}
   m_Layer: 5
   m_Name: Who are you?
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &429681378
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2397,7 +2622,67 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 429681380}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 816143929}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 429681377}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 619544911}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 321956240}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1413694486}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &429681380
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2436,6 +2721,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 429681377}
   m_CullTransparentMesh: 1
+--- !u!114 &429681382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 429681377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb857342e19c89744b27e9c20e19e5c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetselfobject: {fileID: 429681377}
+  Kit: {fileID: 1142161360}
+  CHIVQuestion1: 0
+  myButton1: {fileID: 429681379}
+  CHIVWhere: {fileID: 1216668088}
+  CHIVAlive: {fileID: 139792852}
+  RENAMECHANGE: 0
 --- !u!1 &439065654
 GameObject:
   m_ObjectHideFlags: 0
@@ -2448,13 +2752,14 @@ GameObject:
   - component: {fileID: 439065658}
   - component: {fileID: 439065657}
   - component: {fileID: 439065656}
+  - component: {fileID: 439065659}
   m_Layer: 5
   m_Name: Who are you?
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &439065655
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2517,7 +2822,67 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 439065657}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1704798322}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 439065654}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 953375986}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1483126759}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 176650407}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &439065657
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2556,6 +2921,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 439065654}
   m_CullTransparentMesh: 1
+--- !u!114 &439065659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 439065654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 371bc07d1ad5ec449aaad2a4cbf5fbfd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetselfobject: {fileID: 439065654}
+  Kit: {fileID: 1142161360}
+  MUSHQuestion1: 0
+  myButton1: {fileID: 439065656}
+  MUSHWhere: {fileID: 1080132369}
+  MUSHAlive: {fileID: 1620715947}
+  RENAMECHANGE: 0
 --- !u!1 &451876818
 GameObject:
   m_ObjectHideFlags: 0
@@ -2567,13 +2951,14 @@ GameObject:
   - component: {fileID: 451876819}
   - component: {fileID: 451876821}
   - component: {fileID: 451876820}
+  - component: {fileID: 451876822}
   m_Layer: 0
   m_Name: WIMS Kenji CHIL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &451876819
 Transform:
   m_ObjectHideFlags: 0
@@ -2657,6 +3042,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &451876822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 451876818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91241687954eadb43aa7fefadf714ab6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CHILwho: {fileID: 1909195419}
+  CHILWhere: {fileID: 424110918}
+  CHILAlive: {fileID: 1851115657}
+  CHILKenji: {fileID: 1151025353}
 --- !u!1 &461259940
 GameObject:
   m_ObjectHideFlags: 0
@@ -2707,9 +3108,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 627eb153ae0f7584abdfa890cce1ef04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Kit: {fileID: 1142161360}
   NameChange: {fileID: 1142161360}
   targetObject: {fileID: 461259940}
   ChilliOrChives: {fileID: 529823350}
+  ChivesCust: {fileID: 750667878}
+  Package: {fileID: 934803035}
 --- !u!114 &461259943
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3232,13 +3636,14 @@ GameObject:
   - component: {fileID: 580052468}
   - component: {fileID: 580052470}
   - component: {fileID: 580052469}
+  - component: {fileID: 580052471}
   m_Layer: 0
   m_Name: IMSA Kenji CHIL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &580052468
 Transform:
   m_ObjectHideFlags: 0
@@ -3322,6 +3727,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &580052471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 580052467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91241687954eadb43aa7fefadf714ab6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CHILwho: {fileID: 1909195419}
+  CHILWhere: {fileID: 424110918}
+  CHILAlive: {fileID: 1851115657}
+  CHILKenji: {fileID: 1151025353}
 --- !u!1 &603739894
 GameObject:
   m_ObjectHideFlags: 0
@@ -4906,7 +5327,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &797402679
 Transform:
   m_ObjectHideFlags: 0
@@ -5154,13 +5575,14 @@ GameObject:
   - component: {fileID: 816143930}
   - component: {fileID: 816143932}
   - component: {fileID: 816143931}
+  - component: {fileID: 816143933}
   m_Layer: 0
   m_Name: WAY Kenji CHIV
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &816143930
 Transform:
   m_ObjectHideFlags: 0
@@ -5244,6 +5666,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &816143933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 816143929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5f86b52be5c7ba45a1d06f01434a136, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CHIVwho: {fileID: 429681382}
+  CHIVWhere: {fileID: 1216668088}
+  CHIVAlive: {fileID: 139792852}
+  CHIVKenji: {fileID: 619544911}
 --- !u!1 &829658482
 GameObject:
   m_ObjectHideFlags: 0
@@ -6037,6 +6475,7 @@ MonoBehaviour:
   myButton1: {fileID: 886746262}
   NFwho: {fileID: 1354224190}
   NFWhere: {fileID: 1976569667}
+  RENAMECHANGE: 0
 --- !u!1 &910299975
 GameObject:
   m_ObjectHideFlags: 0
@@ -6513,6 +6952,7 @@ MonoBehaviour:
   Kit: {fileID: 1142161360}
   targetObject: {fileID: 934803030}
   mybutton: {fileID: 934803032}
+  MushroomsCollected: 0
 --- !u!1 &953375986
 GameObject:
   m_ObjectHideFlags: 0
@@ -7608,13 +8048,14 @@ GameObject:
   - component: {fileID: 1060950692}
   - component: {fileID: 1060950694}
   - component: {fileID: 1060950693}
+  - component: {fileID: 1060950695}
   m_Layer: 0
   m_Name: WAY Kenji CHIL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1060950692
 Transform:
   m_ObjectHideFlags: 0
@@ -7698,6 +8139,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1060950695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1060950691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91241687954eadb43aa7fefadf714ab6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CHILwho: {fileID: 1909195419}
+  CHILWhere: {fileID: 424110918}
+  CHILAlive: {fileID: 1851115657}
+  CHILKenji: {fileID: 1151025353}
 --- !u!1 &1080132364
 GameObject:
   m_ObjectHideFlags: 0
@@ -7710,13 +8167,14 @@ GameObject:
   - component: {fileID: 1080132368}
   - component: {fileID: 1080132367}
   - component: {fileID: 1080132366}
+  - component: {fileID: 1080132369}
   m_Layer: 5
   m_Name: Where is my Son
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1080132365
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7779,7 +8237,67 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1080132367}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 176650407}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1080132364}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 953375986}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1483126759}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1704798322}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1080132367
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7818,6 +8336,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1080132364}
   m_CullTransparentMesh: 1
+--- !u!114 &1080132369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1080132364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65bcb405a185654894f0dc8f5815a51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetselfobject: {fileID: 1080132364}
+  Kit: {fileID: 1142161360}
+  MUSHQuestion2: 0
+  myButton1: {fileID: 1080132366}
+  MUSHwho: {fileID: 439065659}
+  MUSHAlive: {fileID: 1620715947}
+  RENAMECHANGE: 0
 --- !u!1 &1119646909
 GameObject:
   m_ObjectHideFlags: 0
@@ -7913,7 +8450,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1886324342}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -8087,11 +8624,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NPCDialogueText: {fileID: 799143480}
   typeSpeed: 10
+  PackageAppear: {fileID: 934803035}
   NPCNAMEChange: 0
   KitchenShow: 0
   NFwho: {fileID: 1354224190}
   NFWhere: {fileID: 1976569667}
   NFAlive: {fileID: 886746265}
+  CHILwho: {fileID: 1909195419}
+  CHILWhere: {fileID: 424110918}
+  CHILAlive: {fileID: 1851115657}
+  CHIVwho: {fileID: 429681382}
+  CHIVWhere: {fileID: 1216668088}
+  CHIVAlive: {fileID: 139792852}
+  MUSHwho: {fileID: 439065659}
+  MUSHWhere: {fileID: 1080132369}
+  MUSHAlive: {fileID: 1620715947}
 --- !u!1 &1144738071
 GameObject:
   m_ObjectHideFlags: 0
@@ -8433,13 +8980,14 @@ GameObject:
   - component: {fileID: 1216668087}
   - component: {fileID: 1216668086}
   - component: {fileID: 1216668085}
+  - component: {fileID: 1216668088}
   m_Layer: 5
   m_Name: Where is my Son
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1216668084
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8502,7 +9050,67 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1216668086}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1413694486}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1216668083}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 619544911}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 321956240}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 816143929}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1216668086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8541,6 +9149,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1216668083}
   m_CullTransparentMesh: 1
+--- !u!114 &1216668088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1216668083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07f6aea09f89df84c900d92fae995e14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetselfobject: {fileID: 1216668083}
+  Kit: {fileID: 1142161360}
+  CHIVQuestion2: 0
+  myButton1: {fileID: 1216668085}
+  CHIVwho: {fileID: 429681382}
+  CHIVAlive: {fileID: 139792852}
+  RENAMECHANGE: 0
 --- !u!1 &1221339730
 GameObject:
   m_ObjectHideFlags: 0
@@ -9097,6 +9724,7 @@ MonoBehaviour:
   targetselfobject: {fileID: 1354224185}
   Kit: {fileID: 1142161360}
   NFQuestion1: 0
+  RENAMECHANGE: 0
   myButton1: {fileID: 1354224187}
   NFWhere: {fileID: 1976569667}
   NFAlive: {fileID: 886746265}
@@ -9320,13 +9948,14 @@ GameObject:
   - component: {fileID: 1413694487}
   - component: {fileID: 1413694489}
   - component: {fileID: 1413694488}
+  - component: {fileID: 1413694490}
   m_Layer: 0
   m_Name: WIMS Kenji CHIV
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1413694487
 Transform:
   m_ObjectHideFlags: 0
@@ -9410,6 +10039,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1413694490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1413694486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5f86b52be5c7ba45a1d06f01434a136, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CHIVwho: {fileID: 429681382}
+  CHIVWhere: {fileID: 1216668088}
+  CHIVAlive: {fileID: 139792852}
+  CHIVKenji: {fileID: 619544911}
 --- !u!1 &1416507416
 GameObject:
   m_ObjectHideFlags: 0
@@ -10057,13 +10702,14 @@ GameObject:
   - component: {fileID: 1483126760}
   - component: {fileID: 1483126762}
   - component: {fileID: 1483126761}
+  - component: {fileID: 1483126763}
   m_Layer: 0
   m_Name: IMSA Kenji MUSH
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1483126760
 Transform:
   m_ObjectHideFlags: 0
@@ -10147,6 +10793,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1483126763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1483126759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2776b2d3f6f72fd4bb27909ecdaae1ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MUSHwho: {fileID: 439065659}
+  MUSHWhere: {fileID: 1080132369}
+  MUSHAlive: {fileID: 1620715947}
+  MUSHKenji: {fileID: 953375986}
 --- !u!1 &1486786835
 GameObject:
   m_ObjectHideFlags: 0
@@ -10611,8 +11273,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d23d25f1cde476498350f57f1b07b16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Kit: {fileID: 1142161360}
   NameChange: {fileID: 1142161360}
   targetObject: {fileID: 1536090320}
+  Package: {fileID: 934803035}
+  NFwho: {fileID: 1354224190}
+  NFWhere: {fileID: 1976569667}
+  NFAlive: {fileID: 886746265}
+  CHILwho: {fileID: 1909195419}
+  CHILWhere: {fileID: 424110918}
+  CHILAlive: {fileID: 1851115657}
+  CHIVwho: {fileID: 429681382}
+  CHIVWhere: {fileID: 1216668088}
+  CHIVAlive: {fileID: 139792852}
+  MUSHwho: {fileID: 439065659}
+  MUSHWhere: {fileID: 1080132369}
+  MUSHAlive: {fileID: 1620715947}
 --- !u!1 &1561268055
 GameObject:
   m_ObjectHideFlags: 0
@@ -11093,6 +11769,42 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1522023067}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 235532179}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 953375986}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1585900871
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11500,13 +12212,14 @@ GameObject:
   - component: {fileID: 1620715946}
   - component: {fileID: 1620715945}
   - component: {fileID: 1620715944}
+  - component: {fileID: 1620715947}
   m_Layer: 5
   m_Name: Is my Son Alive
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1620715943
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11569,7 +12282,67 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1620715945}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1483126759}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1620715942}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 953375986}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1704798322}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 176650407}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1620715945
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11608,6 +12381,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1620715942}
   m_CullTransparentMesh: 1
+--- !u!114 &1620715947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1620715942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6fcc1b657cc6814c9233941d2caea55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetselfobject: {fileID: 1620715942}
+  Kit: {fileID: 1142161360}
+  MUSHQuestion3: 0
+  myButton1: {fileID: 1620715944}
+  MUSHWho: {fileID: 439065659}
+  MUSHWhere: {fileID: 1080132369}
+  RENAMECHANGE: 0
 --- !u!1 &1647239640
 GameObject:
   m_ObjectHideFlags: 0
@@ -11883,6 +12675,42 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 933088205}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1522023067}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1782285014}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1151025353}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -12187,13 +13015,14 @@ GameObject:
   - component: {fileID: 1704798323}
   - component: {fileID: 1704798325}
   - component: {fileID: 1704798324}
+  - component: {fileID: 1704798326}
   m_Layer: 0
   m_Name: WAY Kenji MUSH
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1704798323
 Transform:
   m_ObjectHideFlags: 0
@@ -12277,6 +13106,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1704798326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1704798322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2776b2d3f6f72fd4bb27909ecdaae1ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MUSHwho: {fileID: 439065659}
+  MUSHWhere: {fileID: 1080132369}
+  MUSHAlive: {fileID: 1620715947}
+  MUSHKenji: {fileID: 953375986}
 --- !u!1 &1711752768
 GameObject:
   m_ObjectHideFlags: 0
@@ -12675,7 +13520,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1782285015
 Transform:
   m_ObjectHideFlags: 0
@@ -13247,13 +14092,14 @@ GameObject:
   - component: {fileID: 1851115656}
   - component: {fileID: 1851115655}
   - component: {fileID: 1851115654}
+  - component: {fileID: 1851115657}
   m_Layer: 5
   m_Name: Is my Son Alive
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1851115653
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13316,7 +14162,67 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1851115655}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 580052467}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1851115652}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1151025353}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1060950691}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 451876818}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1851115655
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13355,6 +14261,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1851115652}
   m_CullTransparentMesh: 1
+--- !u!114 &1851115657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1851115652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59613be7470a0db4892767dbdee784c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetselfobject: {fileID: 1851115652}
+  Kit: {fileID: 1142161360}
+  CHILQuestion3: 0
+  myButton1: {fileID: 1851115654}
+  CHILWho: {fileID: 1909195419}
+  CHILWhere: {fileID: 424110918}
+  RENAMECHANGE: 0
 --- !u!1 &1858970972
 GameObject:
   m_ObjectHideFlags: 0
@@ -13950,13 +14875,14 @@ GameObject:
   - component: {fileID: 1909195418}
   - component: {fileID: 1909195417}
   - component: {fileID: 1909195416}
+  - component: {fileID: 1909195419}
   m_Layer: 5
   m_Name: Who are you?
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1909195415
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14019,7 +14945,67 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1909195417}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1060950691}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1909195414}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1151025353}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 580052467}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 451876818}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1909195417
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14058,6 +15044,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1909195414}
   m_CullTransparentMesh: 1
+--- !u!114 &1909195419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1909195414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13742a0e7fcb5c048b2cfe0f052de3cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetselfobject: {fileID: 1909195414}
+  Kit: {fileID: 1142161360}
+  CHILQuestion1: 0
+  myButton1: {fileID: 1909195416}
+  CHILWhere: {fileID: 424110918}
+  CHILAlive: {fileID: 1851115657}
+  RENAMECHANGE: 0
 --- !u!1 &1916559926
 GameObject:
   m_ObjectHideFlags: 0
@@ -14212,6 +15217,42 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 673347464}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1522023067}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 797402678}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 619544911}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -14772,6 +15813,7 @@ MonoBehaviour:
   myButton1: {fileID: 1976569664}
   NFwho: {fileID: 1354224190}
   NFAlive: {fileID: 886746265}
+  RENAMECHANGE: 0
 --- !u!1 &1985173506
 GameObject:
   m_ObjectHideFlags: 0
