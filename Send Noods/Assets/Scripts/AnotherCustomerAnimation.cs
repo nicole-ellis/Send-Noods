@@ -9,7 +9,7 @@ public class AnotherCustomerAnimation : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+       playAnimation(); 
     }
 
     public void playAnimation(){
@@ -19,6 +19,5 @@ public class AnotherCustomerAnimation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        playAnimation();
     }
 }
