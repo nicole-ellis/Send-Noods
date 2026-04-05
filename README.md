@@ -14,13 +14,13 @@ The project focuses on creating an emotionally engaging player experience throug
 
 ---
 
-## 🎮 Gameplay Trailer
+## Gameplay Trailer
 
 https://youtu.be/VWapUM9UpkM
 
 ---
 
-## 🕹️ Play the Game
+## Play the Game
 
 https://nicoleellis.itch.io/send-noods
 
