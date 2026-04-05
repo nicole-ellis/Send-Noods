@@ -26,6 +26,13 @@ https://nicoleellis.itch.io/send-noods
 
 ---
 
+## Screenshots
+
+![Title Screen](title-screen.png)
+![Interior Art](interior-art.png)
+
+---
+
 ## Key Features
 
 * Narrative-driven gameplay with branching emotional outcomes
