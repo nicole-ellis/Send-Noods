@@ -28,6 +28,7 @@ https://nicoleellis.itch.io/send-noods
 
 ## Screenshots
 
+![GIF](trailer-gif.gif)
 ![Title Screen](title-screen.png)
 ![Interior Art](interior-art.png)
 
